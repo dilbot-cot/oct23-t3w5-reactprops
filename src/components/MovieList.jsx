@@ -18,14 +18,13 @@ let favouriteMovies = [
 	"The good, the bad, and the ugly",
 	"Robocop",
 	"Bladerunner",
-    "",
 	"Lord of the Rings 1-3"
 ];
 
 export default function MovieList(){
 
 	return (
-	<section>
+	<section className="cards">
 		{favouriteMovies.map((movie, index) => {
 
             if (movie.length === 0) {
@@ -36,16 +35,3 @@ export default function MovieList(){
 	</section>
 	);
 }
-
-
-// export function SomeFunction(){
-
-// }
-
-// module.exports = {
-// 	SomeFunction
-// }
-
-// module.exports = MovieList;
-
-// import MovieList, {SomeFunction} from "thefile "
